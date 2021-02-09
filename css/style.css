@@ -1,0 +1,15 @@
+img {
+  display: block;
+  box-sizing: border-box;
+  width: inherit;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 480px;
+  list-style: none;
+}
