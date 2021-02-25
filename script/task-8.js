@@ -10,7 +10,9 @@ let amountInput = 0;
 const divArr = [];
 
 ref.controls.addEventListener('click', onInputValue);
-ref.render.addEventListener('click', creatBoxes);
+ref.render.addEventListener('click', () => {
+  creatBoxes(amountInput);
+});
 ref.destroy.addEventListener('click', cleanBoxes);
 
 function makeRandomColor() {
@@ -23,7 +25,7 @@ function makeRandomColor() {
 function creatBoxes(amount) {
   let size = 30;
 
-  for (let i = 0; i < amountInput; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const div = document.createElement('div');
 
     div.style.backgroundColor = makeRandomColor();

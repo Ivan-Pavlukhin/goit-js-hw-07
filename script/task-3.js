@@ -26,18 +26,3 @@ const creatListWithImage = image => {
 const imagesRef = images.map(creatListWithImage).join(' ');
 console.log(imagesRef);
 galleryRef.insertAdjacentHTML('afterbegin', imagesRef);
-
-// const galleryRef = document.querySelector('#gallery');
-// const creatListWithImag = ({ url, alt }) => {
-//   const itemImageRef = document.createElement('li');
-//   const imageRef = document.createElement('img');
-
-//   imageRef.src = url;
-//   imageRef.alt = alt;
-//   imageRef.width = 640;
-//   itemImageRef.appendChild(imageRef);
-//   return itemImageRef;
-// };
-// const imagesRef = images.map(creatListWithImag);
-// console.log(imagesRef);
-// galleryRef.append(...imagesRef);
